@@ -65,6 +65,11 @@
   :hook ((typescript-ts-mode . prettier-js-mode)
 	 (tsx-ts-mode . prettier-js-mode)))
 
+(use-package jest-test-mode 
+  :ensure t 
+  :commands jest-test-mode
+  :hook (typescript-mode js-mode typescript-ts-mode tsx-ts-mode))
+
 (use-package markdown-mode)
 
 

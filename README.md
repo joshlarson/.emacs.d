@@ -36,4 +36,15 @@ that are available
 
 `C-c d f` - Run the test that the cursor is currently in
 
-`C-c d t` - Run all tests for the project you're in
+`C-c d t` - Run all tests for the project
+
+### Jest
+
+`C-c C-t` - Open a menu (with `which-key`) of the various jest
+commands that are available
+
+`C-c C-t n` - Run tests in the current buffer
+
+`C-c C-t t` = Run the test that the cursor is currently in
+
+`C-c C-t p` - Run all tests for the project
