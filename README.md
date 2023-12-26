@@ -45,6 +45,6 @@ commands that are available
 
 `C-c C-t n` - Run tests in the current buffer
 
-`C-c C-t t` = Run the test that the cursor is currently in
+`C-c C-t t` - Run the test that the cursor is currently in
 
 `C-c C-t p` - Run all tests for the project
