@@ -12,6 +12,7 @@
  ("heex-ts-mode" . "80f35c61eb99393179b58a75c0fdd9b546d25136")
  ("jsonrpc" . "fcbdd9ea204862d99b45656e53cabf32608ede89")
  ("melpa" . "705564010a3af784c0fd00fe1b1cc5a20d73172b")
+ ("mix.el" . "811ff399f43425fc6e04866a521063d53938b6a2")
  ("nongnu-elpa" . "b299b0d074a4762e99474ba443d37263f87ace1d")
  ("prettier-emacs" . "e9b73e81d3e1642aec682195f127a42dfb0b5774")
  ("project" . "4525840a6ebd2610dc4173119cc8e482eb658773")

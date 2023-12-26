@@ -46,9 +46,12 @@
   (add-to-list 'eglot-server-programs '(elixir-ts-mode "~/.emacs.d/elixir-ls/release/language_server.sh"))
   )
 
+(use-package mix)
+
 (use-package elixir-ts-mode
   :config
-  (add-hook 'elixir-ts-mode-hook (lambda () (add-hook 'before-save-hook 'eglot-format nil t))))
+  (add-hook 'elixir-ts-mode-hook (lambda () (add-hook 'before-save-hook 'eglot-format nil t)))
+  (add-hook 'elixir-ts-mode-hook 'mix-minor-mode))
 
 (use-package add-node-modules-path
   :config
