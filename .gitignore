@@ -1,0 +1,7 @@
+*~
+auto-save-list
+tree-sitter
+
+straight/build
+straight/build-cache.el
+straight/repos
