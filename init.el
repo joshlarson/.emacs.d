@@ -65,6 +65,8 @@
   :hook ((typescript-ts-mode . prettier-js-mode)
 	 (tsx-ts-mode . prettier-js-mode)))
 
+(use-package markdown-mode)
+
 
 ;; Tree Sitter grammar installation
 

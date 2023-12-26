@@ -11,6 +11,7 @@
  ("gnu-elpa-mirror" . "ab9bcb0be30511d4fff7e413135507cebc447f7c")
  ("heex-ts-mode" . "80f35c61eb99393179b58a75c0fdd9b546d25136")
  ("jsonrpc" . "fcbdd9ea204862d99b45656e53cabf32608ede89")
+ ("markdown-mode" . "141f9a05d121f60fe5e411c0ad114e3d3216c9ad")
  ("melpa" . "705564010a3af784c0fd00fe1b1cc5a20d73172b")
  ("mix.el" . "811ff399f43425fc6e04866a521063d53938b6a2")
  ("nongnu-elpa" . "b299b0d074a4762e99474ba443d37263f87ace1d")
