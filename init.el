@@ -39,7 +39,9 @@
 ;; Language Stuff
 
 (use-package eglot
-  :hook ((elixir-ts-mode . eglot-ensure))
+  :hook ((elixir-ts-mode . eglot-ensure)
+	 (typescript-ts-mode . eglot-ensure)
+	 (tsx-ts-mode . eglot-ensure))
   :config
   (add-to-list 'eglot-server-programs '(elixir-ts-mode "~/.emacs.d/elixir-ls/release/language_server.sh"))
   )
@@ -48,12 +50,26 @@
   :config
   (add-hook 'elixir-ts-mode-hook (lambda () (add-hook 'before-save-hook 'eglot-format nil t))))
 
+(use-package add-node-modules-path
+  :config
+  (setq add-node-modules-path-command '("echo \"$(npm root)/.bin\""))
+  :hook ((typescript-ts-mode . add-node-modules-path)
+	 (tsx-ts-mode . add-node-modules-path)))
+
+(require 'typescript-ts-mode)
+
+(use-package prettier-js
+  :hook ((typescript-ts-mode . prettier-js-mode)
+	 (tsx-ts-mode . prettier-js-mode)))
+
 
 ;; Tree Sitter grammar installation
 
 (setq treesit-language-source-alist
       '((elixir . ("https://github.com/elixir-lang/tree-sitter-elixir.git" "main"))
         (heex . ("https://github.com/phoenixframework/tree-sitter-heex.git" "main"))
+        (typescript . ("https://github.com/tree-sitter/tree-sitter-typescript.git" "master" "typescript/src"))
+        (tsx . ("https://github.com/tree-sitter/tree-sitter-typescript.git" "master" "tsx/src"))
         ))
 
 (dolist (entry treesit-language-source-alist)
