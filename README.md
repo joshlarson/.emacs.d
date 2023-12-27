@@ -36,6 +36,9 @@ that are available
 
 `C-c d f` - Run the test that the cursor is currently in
 
+`C-c d l` - Run the last mix command, regardless of where the cursor
+currently is
+
 `C-c d t` - Run all tests for the project
 
 ### Jest
@@ -46,5 +49,8 @@ commands that are available
 `C-c C-t n` - Run tests in the current buffer
 
 `C-c C-t t` - Run the test that the cursor is currently in
+
+`C-c C-t C-a` - Run the last jest command, regardless of where the
+cursor currently is
 
 `C-c C-t p` - Run all tests for the project
