@@ -36,8 +36,9 @@
   (which-key-mode))
 
 
-;;
+;; Magit
 
+(setq magit-define-global-key-bindings 'recommended)
 (use-package magit)
 
 

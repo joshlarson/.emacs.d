@@ -59,5 +59,9 @@ cursor currently is
 
 `C-x g` - Open the git status buffer
 
+`C-c g` - Open a menu with global Magit commands
+
+`C-c f` - Open a menu with file-specific Magit commands
+
 `?` or `h` (from within the git status buffer) - Open a help menu
 showing the available commands
