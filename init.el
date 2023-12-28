@@ -36,6 +36,11 @@
   (which-key-mode))
 
 
+;;
+
+(use-package magit)
+
+
 ;; Language Stuff
 
 (use-package eglot

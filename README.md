@@ -54,3 +54,10 @@ commands that are available
 cursor currently is
 
 `C-c C-t p` - Run all tests for the project
+
+### Magit
+
+`C-x g` - Open the git status buffer
+
+`?` or `h` (from within the git status buffer) - Open a help menu
+showing the available commands
