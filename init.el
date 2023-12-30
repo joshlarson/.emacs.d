@@ -93,3 +93,7 @@
     (unless (treesit-language-available-p name)
       (treesit-install-language-grammar name))))
 
+
+;; Terraform
+
+(use-package terraform-mode)
