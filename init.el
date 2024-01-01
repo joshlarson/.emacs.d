@@ -97,3 +97,8 @@
 ;; Terraform
 
 (use-package terraform-mode)
+
+
+;; Dockerfile
+
+(use-package dockerfile-mode)
