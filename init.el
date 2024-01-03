@@ -102,3 +102,8 @@
 ;; Dockerfile
 
 (use-package dockerfile-mode)
+
+
+;; YAML
+
+(use-package yaml-mode)
