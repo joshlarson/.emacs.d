@@ -27,6 +27,9 @@ trouble getting this to work reliably in Elixir projects)
 
 `M-?` - Find usages of the token that the cursor is currently on
 
+`C-h .` - Open documentation buffer, which shows the documentation for
+whatever is under the cursor
+
 ### Elixir (Mix minor mode)
 
 `C-c d` - Open a menu (with `which-key`) of the various mix commands
