@@ -68,3 +68,19 @@ cursor currently is
 
 `?` or `h` (from within the git status buffer) - Open a help menu
 showing the available commands
+
+### HideShow minor mode
+
+_Enabled by default for Elixir and Typescript modes_
+
+`M-x hs-minor-mode` - Turn this minor mode on or off
+
+`C-c @ C-h` - Hide the block the cursor is currently in
+
+`C-c @ C-s` - Show the block the cursor is currently in
+
+`C-c @ C-l` - Hide all blocks at the level matching where the cursor is
+
+`C-c @ C-a` - Expand everything
+
+`C-c @ C-t` - Collapse all top-level blocks

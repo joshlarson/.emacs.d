@@ -57,7 +57,8 @@
 (use-package elixir-ts-mode
   :config
   (add-hook 'elixir-ts-mode-hook (lambda () (add-hook 'before-save-hook 'eglot-format nil t)))
-  (add-hook 'elixir-ts-mode-hook 'mix-minor-mode))
+  (add-hook 'elixir-ts-mode-hook 'mix-minor-mode)
+  (add-hook 'elixir-ts-mode-hook 'hs-minor-mode))
 
 (use-package add-node-modules-path
   :config
@@ -66,6 +67,7 @@
 	 (tsx-ts-mode . add-node-modules-path)))
 
 (require 'typescript-ts-mode)
+(add-hook 'typescript-ts-mode-hook 'hs-minor-mode)
 
 (use-package prettier-js
   :hook ((typescript-ts-mode . prettier-js-mode)
