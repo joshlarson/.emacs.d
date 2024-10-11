@@ -46,10 +46,12 @@
 
 (use-package eglot
   :hook ((elixir-ts-mode . eglot-ensure)
+	 (heex-ts-mode . eglot-ensure)
 	 (typescript-ts-mode . eglot-ensure)
 	 (tsx-ts-mode . eglot-ensure))
   :config
   (add-to-list 'eglot-server-programs '(elixir-ts-mode "~/.emacs.d/elixir-ls/release/language_server.sh"))
+  (add-to-list 'eglot-server-programs '(heex-ts-mode "~/.emacs.d/elixir-ls/release/language_server.sh"))
   )
 
 (use-package mix)
@@ -59,6 +61,11 @@
   (add-hook 'elixir-ts-mode-hook (lambda () (add-hook 'before-save-hook 'eglot-format nil t)))
   (add-hook 'elixir-ts-mode-hook 'mix-minor-mode)
   (add-hook 'elixir-ts-mode-hook 'hs-minor-mode))
+
+(use-package heex-ts-mode
+  :config
+  (add-hook 'heex-ts-mode-hook (lambda () (add-hook 'before-save-hook 'eglot-format nil t)))
+  (add-hook 'heex-ts-mode-hook 'mix-minor-mode))
 
 (use-package add-node-modules-path
   :config
