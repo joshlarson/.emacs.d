@@ -12,6 +12,7 @@
  ("external-completion" . "69f06e1eff72df60bb10153169edc859f27f58f2")
  ("flymake" . "c772251c9aaec34094fd4c5347d4e5f16647847b")
  ("gnu-elpa-mirror" . "c7c879e92cb2cfe5af56b8877d24a1d9b2adf14e")
+ ("graphql-mode" . "ee49531935ede7a2c9597713e13a4c9d33ef2220")
  ("hcl-mode" . "37f2cb1bf6fb51fbf99d4fac256298fcd6d1dd24")
  ("heex-ts-mode" . "90142df2929956536dc1eaae3bb5ca04dc4232ab")
  ("jest-test-mode" . "a397507d8bb41e4aa6b97994f1d7512e78d3dee3")

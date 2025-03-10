@@ -116,3 +116,8 @@
 ;; YAML
 
 (use-package yaml-mode)
+
+
+;; GraphQL
+
+(use-package graphql-mode)
